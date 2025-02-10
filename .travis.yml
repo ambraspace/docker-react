@@ -4,7 +4,7 @@ language: generic
 
 services:
   - docker
-  
+
 before_install:
   - docker build -f Dockerfile.dev -t ambraspace/docker-react .
 
@@ -22,4 +22,3 @@ deploy:
     branch: master
   acces_key_id: $AWS_ACCESS_KEY
   secret_access_key: "$AWS_SECRET_KEY"
-  
